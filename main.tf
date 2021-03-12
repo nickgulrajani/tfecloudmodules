@@ -42,7 +42,7 @@ module "ec2_instances" {
 module "website_s3_bucket" {
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "nickmodulebucket"
+  bucket_name = "nicktfemodulebucket"
 
   tags = {
     Terraform   = "true"
