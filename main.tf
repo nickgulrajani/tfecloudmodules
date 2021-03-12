@@ -4,6 +4,8 @@ provider "aws" {
   region = "us-west-2"
 }
 
+/*
+
 terraform {
   backend "remote" {
     organization = "wwtmulticloud"
@@ -13,6 +15,8 @@ terraform {
     }
   }
 }
+
+*/
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
