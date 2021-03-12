@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
   backend "remote" {
     organization = "wwtmulticloud"
-
+    hostname     = "app.terraform.io"
     workspaces {
       name = "tfecloudmodules"
     }
