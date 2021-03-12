@@ -4,6 +4,16 @@ provider "aws" {
   region = "us-west-2"
 }
 
+terraform {
+  backend "remote" {
+    organization = "wwtmulticloud"
+
+    workspaces {
+      name = "tfecloudmodules"
+    }
+  }
+}
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.21.0"
